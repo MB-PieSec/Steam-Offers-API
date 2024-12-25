@@ -1,0 +1,20 @@
+<div class="games-grid">
+    {{#each games}}
+    <a class="game-card" href="https://store.steampowered.com/app/{{this.appid}}">
+        <div>
+            <img src="{{this.image}}" alt="{{this.name}}">
+            <h2>{{this.name}}</h2>
+            <p>{{this.description}}</p>
+            <p><strong>Price:</strong> {{this.price}} ({{this.discount}}% off)</p>
+            
+        </div>
+    </a>
+    {{/each}}
+</div>
+
+<div class="pagination">
+    {{#if (gt page 1)}}
+    <a href="/showgames?page={{subtract page 1}}">Previous</a>
+    {{/if}}
+    <a href="/showgames?page={{add page 1}}">Next</a>
+</div>

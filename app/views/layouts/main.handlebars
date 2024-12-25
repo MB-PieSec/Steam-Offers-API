@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body class="bg-gray-900 text-gray-300">
+    <header class="bg-gray-800 text-center py-6">
+        <div class="container mx-auto">
+            <h1 class="text-3xl font-bold">Steam Offers Monitor</h1>
+            <nav>
+                <ul class="list-none flex justify-center gap-6 mt-4">
+                    <li><a href="/" class="text-cyan-400 hover:text-white font-bold transition-colors">Home</a></li>
+                    <li><a href="/showgames?page=1" class="text-cyan-400 hover:text-white font-bold transition-colors">Offers</a></li>
+                    <li><a href="/about" class="text-cyan-400 hover:text-white font-bold transition-colors">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    {{{body}}}
+
+    <footer class="bg-gray-800 text-center py-4">
+        <div class="container mx-auto">
+            <p class="text-sm">&copy; 2024 Steam Offers Monitor. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
